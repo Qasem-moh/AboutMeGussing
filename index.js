@@ -53,7 +53,7 @@ let myEduction = prompt(
 ).toLowerCase();
 console.log(myEduction);
 
-if (myEduction == "Media") {
+if (myEduction == "media") {
   alert("Yess Good my Stuided Media and press");
 } else {
   alert("ooh Soory I'm Stuided Media and press");
