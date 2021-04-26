@@ -31,7 +31,6 @@ console.log(askMyName);
 
 if (askMyName == "qasem") {
   alert("Yes Good My Name's Qasem and I'm owner This web site");
- 
 } else {
   alert("OOOH sorry Is Not Correct");
 }
@@ -42,19 +41,18 @@ console.log(myAge);
 
 if (myAge == "yes" || myAge == "y") {
   alert("Yes My Age Is 28");
- 
 } else {
   alert("OOh Sorry it's Not Correct my age is 28");
 }
 /***************************** */
 
 let myEduction = prompt(
-  "What do you think I'm studied? \n [Media or Computr Since or I'm Not Stuided]"
+  "What do you think I'm studied? [Media or Computr Since or I'm Not Stuided]"
 ).toLowerCase();
 console.log(myEduction);
 
 if (myEduction == "media") {
-  alert("Yess Good my Stuided Media and press");
+  alert("Yes, Good my Stuided Media and press");
 } else {
   alert("ooh Soory I'm Stuided Media and press");
 }
@@ -78,7 +76,8 @@ if (askCode == "yes" || askCode == "y") {
   );
 }
 
-alert("Thank "+askUserName+  "for visit site")
+alert("Thank " + askUserName + "   for visit site");
 
-
-document.write('<span id="username">My Name\'s Qasem </span><br> <span id="age">My age Is 28</span> <span id="age">my Stuided Media and press</span> <span id="age"> and I\'m Syrian</span>')
+document.write(
+  '<span id="username">My Name\'s Qasem </span><br> <span id="age">My age Is 28</span> <span id="age">my Stuided Media and press</span> <span id="age"> and I\'m Syrian</span>'
+);
