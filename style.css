@@ -1,0 +1,41 @@
+.Wel{
+    font-size: 40px;
+    font-family: system-ui;
+    align-content: center;
+    align-items: center;
+    margin: 28px 50%;
+    width: 100%;
+}
+
+
+.movies{
+    font-size: 23px;
+    font-family: serif;
+    margin: 12% 10px 13px 20px;
+    /* border: 1px solid ; */
+    border-right: 2px solid;
+    width: 25%;
+}
+ul li{
+    margin: 6px;
+}
+ul li:first-of-type{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: revert;
+}
+#imageMovies {
+
+
+}
+    
+#imageMovies img{
+    width: 145px;
+    display: inline-block;
+    margin: 180px 0px 20px 15px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+   
+}
