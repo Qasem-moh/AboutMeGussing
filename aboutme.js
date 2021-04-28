@@ -1,5 +1,6 @@
 "use strict";
 let movies = document.getElementsByClassName("movies");
+let Grade = 0;
 
 let myMovie = [
   "The Assistant",
@@ -65,6 +66,7 @@ function gussName() {
   for (let i = 0; i < userName.length; i) {
     if (askMyName === nameArr[i]) {
       console.log(nameArr[i]);
+      Grade += 1;
       alert("Yes Good, My Name's Qasem and I'm owner This web site");
       break;
     } else {
@@ -84,6 +86,7 @@ function gussEducation() {
 
   if (myEduction == "media") {
     alert("Yes, Good my Stuided Media and press");
+    Grade += 1;
   } else {
     alert("ooh Soory I'm Stuided Media and press");
   }
@@ -113,49 +116,61 @@ function gussUniversity() {
   for (let i = 0; i < arrUniversity.length; i++) {
     if (university === arrUniversity[i]) {
       alert("I Think" + arrUniversity[i] + " It's favorit university");
+      Grade += 1;
       console.log(arrUniversity[i]);
     }
   }
 }
 
 // //******************** */
-let askCode = prompt("do you think I like code y,n").toLowerCase();
-if (askCode == "yes" || askCode == "y") {
-  alert("Yes I like code");
-} else {
-  alert("Yes I like code And It passion ");
-}
-/*********************************************** */
-let myAge = prompt("What You think My Age?");
-console.log(myAge);
-let art = 6;
-while (myAge !== "28" && art > 0 && art < 7) {
-  myAge = prompt("What You think My Age?");
-  art = art - 1;
-  if (art == 0) {
-    alert("My Age Is 28");
+function gussCode() {
+  let askCode = prompt("do you think I like code y,n").toLowerCase();
+  if (askCode == "yes" || askCode == "y") {
+    alert("Yes I like code");
+    Grade += 1;
+  } else {
+    alert("Yes I like code And It passion ");
   }
 }
+gussCode();
+/*********************************************** */
+function gussAge() {
+  let myAge = prompt("What You think My Age?");
+  console.log(myAge);
+  let art = 6;
+  while (myAge !== "28" && art > 0 && art < 7) {
+    myAge = prompt("What You think My Age?");
+    Grade += 1;
+    art = art - 1;
+    if (art == 0) {
+      alert("My Age Is 28");
+    }
+  }
+}
+gussAge();
 // /************************ */
-let artt = 6;
-let myNationality = prompt(
-  "What Do You think My nationalityt?\n [Egyptian, Jordanian, Syrian, Lebanese, syria, سوريا، الاردن]"
-).toLowerCase();
-console.log(myNationality);
-
-while (
-  myNationality == "syrian" ||
-  myNationality == "syria" ||
-  myNationality == "سوريا"
-) {
-  myNationality = prompt(
+function gussVationality() {
+  let artt = 6;
+  let myNationality = prompt(
     "What Do You think My nationalityt?\n [Egyptian, Jordanian, Syrian, Lebanese, syria, سوريا، الاردن]"
   ).toLowerCase();
-  art = art - 1;
-  if (art == 0) {
-    alert("ooh Soory, I from" + myNationality);
+  console.log(myNationality);
+
+  while (
+    myNationality == "syrian" ||
+    myNationality == "syria" ||
+    myNationality == "سوريا"
+  ) {
+    myNationality = prompt(
+      "What Do You think My nationalityt?\n [Egyptian, Jordanian, Syrian, Lebanese, syria, سوريا، الاردن]"
+    ).toLowerCase();
+    art = art - 1;
+    if (art == 0) {
+      alert("I from" + myNationality);
+      Grade += 1;
+    }
+    alert("ooh Soory, I'm Syrian");
   }
-  alert("ooh Soory, I'm Syrian");
 }
 
 // //************************ */
@@ -165,7 +180,10 @@ console.log;
 if (askMovies == "yes" || askMovies == "y") {
   moveuser = prompt("Whats Your favorite Movie?");
   alert(
-    "Your favorite movie is " + moveuser + "and my favorite movie is 'First Cow' ");
+    "Your favorite movie is " +
+      moveuser +
+      "and my favorite movie is 'First Cow' "
+  );
 }
 
 let rang = prompt("How much do you give a rating of 10 for my work?");
@@ -176,3 +194,4 @@ let rang = prompt("How much do you give a rating of 10 for my work?");
 // }
 console.log(rang);
 alert("Thank you " + userName + "visit");
+console.log(Grade);
