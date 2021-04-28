@@ -53,64 +53,71 @@ while (userName === "" || userName === null || userName.length < 3) {
   break;
 }
 alert("Welcome " + userName);
+
 // /*********************************** */
-let nameArr = ["qasem", "ahmad", "mohammad"];
-let askMyName = prompt(
-  "What You Think my name From This Name  Qasem,Ahmad,Mohammad "
-).toLowerCase();
-console.log(askMyName);
+function gussName() {
+  let nameArr = ["qasem", "ahmad", "mohammad"];
+  let askMyName = prompt(
+    "What You Think my name From This Name  Qasem,Ahmad,Mohammad "
+  ).toLowerCase();
+  console.log(askMyName);
 
-for (let i = 0; i < userName.length; i) {
-  if (askMyName === nameArr[i]) {
-    console.log(nameArr[i]);
-    alert("Yes Good, My Name's Qasem and I'm owner This web site");
-    break;
+  for (let i = 0; i < userName.length; i) {
+    if (askMyName === nameArr[i]) {
+      console.log(nameArr[i]);
+      alert("Yes Good, My Name's Qasem and I'm owner This web site");
+      break;
+    } else {
+      alert("ooH sorry Is Not Correct my name's Qasem");
+      break;
+    }
+  }
+}
+gussName();
+
+/*************************************** */
+function gussEducation() {
+  let myEduction = prompt(
+    "What do you think I'm studied? [Media or Computr Since or I'm Not Stuided]"
+  ).toLowerCase();
+  console.log(myEduction);
+
+  if (myEduction == "media") {
+    alert("Yes, Good my Stuided Media and press");
   } else {
-    alert("ooH sorry Is Not Correct my name's Qasem");
-    break;
+    alert("ooh Soory I'm Stuided Media and press");
+  }
+}
+gussEducation();
+
+//university******************************
+function gussUniversity() {
+  let university = prompt(
+    "what is a good university in your think?"
+  ).toUpperCase();
+  console.log(university);
+  let arrUniversity = [
+    "AABU",
+    "AOU",
+    "JU",
+    "YU",
+    "MUTAH",
+    "JUST",
+    "HU",
+    "BAU",
+    "AHU",
+    "TTU",
+    "GIU",
+  ];
+
+  for (let i = 0; i < arrUniversity.length; i++) {
+    if (university === arrUniversity[i]) {
+      alert("I Think" + arrUniversity[i] + " It's favorit university");
+      console.log(arrUniversity[i]);
+    }
   }
 }
 
-/***************************** */
-
-let myEduction = prompt(
-  "What do you think I'm studied? [Media or Computr Since or I'm Not Stuided]"
-).toLowerCase();
-console.log(myEduction);
-
-if (myEduction == "media") {
-  alert("Yes, Good my Stuided Media and press");
-} else {
-  alert("ooh Soory I'm Stuided Media and press");
-}
-// }/******************** */
-
-//university
-
-let university = prompt(
-  "what is a good university in your think?"
-).toUpperCase();
-console.log(university);
-let arrUniversity = [
-  "AABU",
-  "AOU",
-  "JU",
-  "YU",
-  "MUTAH",
-  "JUST",
-  "HU",
-  "BAU",
-  "AHU",
-  "TTU",
-  "GIU",
-];
-
-for (let i = 0; i < arrUniversity.length; i++) {
-  if (university === arrUniversity[i]) {
-    alert("I Think" + arrUniversity[i] + " It's favorit university");
-    console.log(arrUniversity[i]);
-  }
-}
 // //******************** */
 let askCode = prompt("do you think I like code y,n").toLowerCase();
 if (askCode == "yes" || askCode == "y") {
