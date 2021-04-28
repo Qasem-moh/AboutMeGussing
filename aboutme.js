@@ -169,7 +169,7 @@ function gussVationality() {
       alert("I from" + myNationality);
       Grade += 1;
     }
-    alert("ooh Soory, I'm Syrian");
+    alert("ooh Soory, Not Correct");
   }
 }
 
