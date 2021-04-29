@@ -8,3 +8,7 @@ _ti's my gussing about me and tell you some information about me and teel you wh
 
 update This Site And use More tech in javascript
  like (array, while, for loop)
+
+
+
+was good practice 
