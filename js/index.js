@@ -194,4 +194,4 @@ let rang = prompt("How much do you give a rating of 10 for my work?");
 // }
 console.log(rang);
 alert("Thank you " + userName + "visit");
-alert("YOur Grade "+ Grade);
+alert("Your Grade " + Grade);
